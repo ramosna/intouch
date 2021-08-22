@@ -1,0 +1,93 @@
+<div class="container-sm">
+<h1>Location Information</h1>
+  <div class="row">
+  <div {{#if address}}class="col-sm-6"{{else}}class="col"{{/if}}>
+    <div {{#if address}}class="card"{{else}} class="card text-center"{{/if}}>
+      <div class="card-body">
+        <h5 class="card-title">Location Name</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{name}}
+        </h6>
+      </div>
+    </div>
+  </div>
+  {{#if address}}
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Location Address</h5>
+        {{#if address1}}
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{address1}}
+        </h6>
+        {{/if}}
+        {{#if address2}}
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{address2}}
+        </h6>
+        {{/if}}
+        <h6 class="card-subtitle mb-2 text-muted">
+          {{#if city}}{{city}}, {{/if}}{{#if state}}{{state}} {{/if}}{{#if zipCode}}{{zipCode}}{{/if}}
+        </h6>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+</div>
+
+<div class="row mt-3">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Longitude</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{longitude}}
+        </h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Latitude</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{latitude}}
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="container-fluid mt-3">
+        <a role="button" class="btn btn-outline-dark" href="/locations">Locations</a>
+      </div>
+</div>
+
+<!--
+    <dl>
+        <dt>Name:</dt>
+        <dd>{{name}}</dd>
+      </dl>
+      <dl>
+        <dt>Address:</dt>
+        <dd>
+            {{#if address1}}
+            {{address1}} <br>
+            {{/if}}
+            {{#if address2}}
+            {{address2}} <br>
+            {{/if}}
+            {{#if city}}{{city}}, {{/if}}{{#if state}}{{state}} {{/if}}{{#if zipCode}}{{zipCode}}{{/if}}
+        </dd>
+      </dl>
+      <dl>
+        <dt>Longitude:</dt>
+        <dd>{{longitude}}</dd>
+      </dl>
+      <dl>
+        <dt>Latitude:</dt>
+        <dd>{{latitude}}</dd>
+      </dl>
+      <form method="get" action="/locations">
+    <button type="submit">Locations</button>
+</form>
+-->

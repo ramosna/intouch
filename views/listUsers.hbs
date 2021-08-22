@@ -1,0 +1,31 @@
+<div class="container-sm">
+<h1>All Users</h1>
+<div class="table-responsive-sm mt-2">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each users}}
+      <tr>
+        <td>{{userId}}</td>
+        <td>{{firstName}}</td>
+        <td>{{lastName}}</td>
+        <td>{{phone}}</td>
+        <td>{{email}}</td>
+        <td><a style="vertical-align: middle;" role="button" class="btn btn-outline-dark btn-sm"   href="/users/{{userId}}/groups">View Groups</a></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  </div>
+  <div class="container-fluid">
+        <a role="button" class="btn btn-outline-dark" href="/users/new">Add User</a>
+    </div>
+  </div>

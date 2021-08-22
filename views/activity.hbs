@@ -1,0 +1,84 @@
+<div class="container-sm">
+<h1>Activity Information</h1>
+  <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Activity Name</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{name}}
+        </h6>
+      </div>
+    </div>
+  <div class="row mt-3">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Start Date and Time</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{startTime}}
+        </h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">End Date and Time</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{endTime}}
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Risk Level</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{risk}}
+        </h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Location</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{location}}
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="card mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Contacts</h5>
+        
+        <div class="table-responsive-sm">
+    <table class="table">
+        <thead>
+          <tr>
+          <th>First Name</th><th>Last Name</th><th>Phone Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each contact}}
+          <tr>
+            <td>{{firstName}}</td><td>{{lastName}}</td><td>{{phone}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+    </table>
+    </div>
+
+      </div>
+    </div>
+      <div class="container-fluid mt-3 mb-4">
+        <a role="button" class="btn btn-outline-dark" href="/activities">Activites</a>
+        <a role="button" class="btn btn-outline-warning" href="/activity/edit/{{activityId}}">Edit</a>
+      </div>
+</div>    
+  

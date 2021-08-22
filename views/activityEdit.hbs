@@ -1,0 +1,87 @@
+<div class="container-sm">
+<h1>Edit Activity</h1>
+  <h5>Activity Details</h5>
+    <form action="/activity/update/{{activityId}}" method="POST">
+        <div class="form-group">
+            <label for="name">Acitvity Name</label>
+            <input class="form-control" type="text" name="name" id="name" required value="{{name}}">
+        </div>
+        <div class="row">
+        <div class="col">
+            <label for="startTime">Start Date and Time</label>
+            <input class="form-control" type="datetime-local" name="startTime" id="startTime" required value="{{startTime}}">
+        </div>
+        <div class="col">
+            <label for="EndTime">End Date and Time</label>
+            <input class="form-control" type="datetime-local" name="endTime" id="endTime" required value="{{endTime}}">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col">
+            <label for="risk">Risk Level</label>
+            <input class="form-control" type="number" name="risk" id="risk" min="1" max="10" required value="{{risk}}">
+        </div>
+        <div class="col">
+            <label for="locationId">Select Location</label>
+            <select class="form-control" name="locationId" id="locationId" required>
+                <option value="{{idLocation}}" selected>{{location}}</option>
+                {{#each locationNew}}
+                <option value="{{locationId}}">{{name}}</option>
+                {{/each}}
+            </select>
+            </div>
+        </div>
+          <div class="container-fluid mt-3">
+            <button type="submit" class="btn btn-outline-success">Submit</button>
+          </div>
+    </form>
+    <h5 class="mt-4 ">Contacts</h5>
+  <div class="row">
+    <div class="col">
+      <div class="table-responsive-l mt-2">
+      <table class="table">
+        <thead>
+          <tr>
+          <th>First Name</th><th>Last Name</th><th>Phone Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each contact}}
+          <tr>
+            <td>{{firstName}}</td><td>{{lastName}}</td><td>{{phone}}</td>{{#if long}}<td align="center">
+                <form action="/delete/contact/{{activityId}}" method="POST">
+                <input type="number" value="{{userId}}" hidden id="userId" name="userId">
+                <input type="submit" class="btn btn-outline-danger mt-6" value="Delete">
+                
+            </form>
+            </td>{{/if}}
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="col mt-4">
+      <form action="/add/contact/{{activityId}}" method="POST">
+      <div class="row">
+      <div class="col-10">
+        <label for="userId">Add Contact</label>
+            <select class="form-control" name="userId" id="userId">
+            {{#each fullContact}}
+                <option value="{{userId}}">{{firstName}} {{lastName}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="col-2 mt-6" style="vertical-align: middle;">
+          <br>
+        <input type="submit" class="btn btn-outline-success mt-6">
+        </div>
+      </div>
+        </form>
+      </div>
+  </div>
+      <div class="container-fluid mt-3 mb-4">
+        <a role="button" class="btn btn-outline-dark" href="/activity/get/{{activityId}}">Back</a>
+      </div>
+</div>

@@ -1,0 +1,45 @@
+    <div class="container-sm">
+    <h1>New Activity</h1>
+    <form action="/activity/new" method="POST">
+        <div class="form-group">
+            <label for="name">Acitvity Name</label>
+            <input class="form-control" type="text" name="name" id="name" required>
+        </div>
+        <div class="row">
+        <div class="col">
+            <label for="startTime">Start Date and Time</label>
+            <input class="form-control" type="datetime-local" name="startTime" id="startTime" required>
+        </div>
+        <div class="col">
+            <label for="EndTime">End Date and Time</label>
+            <input class="form-control" type="datetime-local" name="endTime" id="endTime" required>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col">
+            <label for="risk">Risk Level</label>
+            <input class="form-control" type="number" name="risk" id="risk" min="1" max="10" required>
+        </div>
+        <div class="col">
+            <label for="locationId">Select Location</label>
+            <select class="form-control" name="locationId" id="locationId" required>
+                {{#each location}}
+                <option value="{{locationId}}">{{name}}</option>
+                {{/each}}
+            </select>
+            </div>
+        <div class="col">
+            <label for="userId">Select Contact</label>
+            <select class="form-control" name="userId" id="userId" required>
+                {{#each user}}
+                <option value="{{userId}}">{{firstName}} {{lastName}}</option>
+                {{/each}}
+            </select>
+            </div>
+        </div>
+        <div class="container-fluid mt-3">
+        <button type="submit" class="btn btn-outline-success">Submit</button>
+        <a role="button" class="btn btn-outline-primary" href="/activities">Cancel</a>
+        </div>
+    </form>
+</div>

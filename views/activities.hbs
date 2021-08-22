@@ -1,0 +1,31 @@
+<div class="container-sm">
+<h1>All Activites</h1>
+<div class="table-responsive-sm mt-2">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th>Activity Name</th>
+            <th>Start Date and Time</th>
+            <th>End Date and Time</th>
+            <th>Risk Level</th>
+            <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each list}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{startTime}}</td>
+                <td>{{endTime}}</td>
+                <td>{{risk}}</td>
+                <td>{{place}}</td>
+                <td><a style="vertical-align: middle;" role="button" class="btn btn-outline-dark btn-sm"   href="/activity/get/{{activityId}}">View</a></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    </div>
+    <div class="container-fluid">
+        <a role="button" class="btn btn-outline-dark" href="/activity/new">New Activity</a>
+    </div>
+</div>

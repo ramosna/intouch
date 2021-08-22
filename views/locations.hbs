@@ -1,0 +1,27 @@
+<div class="container-sm">
+<h1>All Locations</h1>
+<div class="table-responsive-sm mt-2">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th>Location Name</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each list}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{latitude}}</td>
+                <td>{{longitude}}</td>
+                <td><a style="vertical-align: middle;" role="button" class="btn btn-outline-dark btn-sm"   href="/location/get/{{locationId}}">View</a></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    </div>
+    <div class="container-fluid">
+        <a role="button" class="btn btn-outline-dark" href="/location/new">New Location</a>
+    </div>
+</div>

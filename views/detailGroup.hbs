@@ -1,0 +1,124 @@
+<div class="container-sm">
+<h1>Group Details</h1>
+  <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Group Name</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{name}}
+        </h6>
+      </div>
+    </div>
+  <div class="row mt-3">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Description</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{description}}
+        </h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Action to take</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{actionToTake}}
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        
+        <h5 class="card-title">Current Activity</h5>
+            <div class="row">
+            {{#if activityId}}
+            <div class="col-sm-7">
+            <h6 class="card-subtitle mb-2 text-muted">{{activityName}}</h6>
+            </div>
+            <div class="col-sm-2">
+            <a role="button" class="btn btn-outline-dark" href="/activity/get/{{activityId}}">View</a>
+            </div>
+            {{else}}
+            <h6 class="card-subtitle mb-2 text-muted">No activity selected.</h6>
+            {{/if}}
+            </h6>
+            </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Share Code</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{shareCode}}
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Members</h5>
+        
+        <div class="table-responsive-sm">
+    <table class="table">
+        <thead>
+          <tr>
+          <th>First Name</th><th>Last Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each members}}
+          <tr>
+            <td>{{firstName}}</td><td>{{lastName}}</td>
+            <td>
+              <form style="display:inline;" action="/groups/{{../groupId}}/members/delete/{{id}}" method="POST">
+              <div class="container-fluid mt-3">
+                <button type="submit" class="btn btn-outline-danger" {{#if ../oneMember}}disabled{{/if}}>Remove</button>
+              </div>
+              </form>
+            </td>
+          </tr>
+          {{/each}}
+        </tbody>
+    </table>
+    </div>
+
+      </div>
+    </div>
+    </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Add Member by ID</h5>
+        <form action="/groups/{{groupId}}/members" method="POST">
+        <div class="form-group">
+          <label for="userId">User ID:</label>
+          <input class="form-control" name="userId" id="userId">
+        </div>
+        <div class="container-fluid mt-3">
+        <button type="submit" class="btn btn-outline-success">Add Member</button>
+        </div>
+        </form>
+        {{#if invalid}}
+        <h6 class="card-subtitle mb-2 text-muted">{{invalid}}</h6>
+        {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt-3 mb-4">
+        <a role="button" class="btn btn-outline-warning" href="/groups/{{groupId}}/edit">Edit</a>
+        <a role="button" class="btn btn-outline-dark" href="/groups">Groups</a>
+      </div>
+</div>

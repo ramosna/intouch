@@ -1,0 +1,43 @@
+<div class="container-sm">
+<h1>Create a Group</h1>
+<form method="POST" action="/groups">
+<div class="form-group">
+  <label for="name">Name</label>
+  <input class="form-control" type="text" name="name" id="name" value={{name}}>
+</div>
+<div class="form-group">
+  <label for="description">Description</label>
+  <textarea class="form-control" name="description" id="description">{{description}}</textarea>
+</div>
+<div class="form-group">
+  <label for="actionToTake">Action to take</label>
+  <textarea class="form-control" name="actionToTake" id="actionToTake" required>{{actionToTake}}</textarea>
+</div>
+<div class="row">
+  <div class="col">
+  <label for="activity">Activity</label>
+  <select class="form-control" name="activityId" id="activity">
+    <option value="">--None--</option>
+    {{#each activities}}
+    <option value={{id}}>{{description}}</option>
+    {{/each}}
+  </select>
+  </div>
+  <div class="col">
+  <label for="members">Members</label>
+  <select class="form-control" name="userIds" id="members">
+    {{#each users}}
+    <option value={{id}}>{{description}}</option>
+    {{/each}}
+  </select>
+  </div>
+  <div class="container-fluid mt-3">
+        <button type="submit" class="btn btn-outline-success">Submit</button>
+        <a role="button" class="btn btn-outline-primary" href="/groups">Cancel</a>
+        </div>
+</div>
+</form>
+{{#if invalid}}
+  <p>{{invalid}}</p>
+{{/if}}
+</div>
