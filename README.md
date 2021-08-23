@@ -9,7 +9,9 @@ Using InTouch, a group could choose to participate in a remote activity, like ro
 At the moment the application is admin-facing as we wanted to build the database first. The app is currently a work in processes and this is first stage.
 
 For a list of depandecies see the [package.json](package.json) file.
+
 For the backend code and database queries see the [app.js](app.js) file
+
 For the html/handlebars files see the [views](views) folder
 
 
