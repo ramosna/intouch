@@ -33,7 +33,7 @@ Demonstrated below is how to add a new location. Location name, longitude, and l
 ![Add Location](gifs/addLocation.gif)
 
 #### Create Activity
-Demonstrated below is how to add a new activity, linking it with a location. All form feilds are required.
+Demonstrated below is how to add a new activity, linking it with a location and an emergency contact. All form feilds are required.
 
 ![Create Activity](gifs/addActivity.gif)
 
