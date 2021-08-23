@@ -23,22 +23,22 @@ For the html/handlebars files see the [views](views) folder.
 The following 4 gifs demonstrate how to add each entity and create a group of users who are to participate in an activity. 
 
 #### Add User
-Demonstrated below is how to add a new user.
+Demonstrated below is how to add a new user. All form feilds are required except for email, which is optional.
 
 ![Add User](gifs/addUser.gif)
 
 #### Add Location
-Demonstrated below is how to add a new location.
+Demonstrated below is how to add a new location. Location name, longitude, and latitude are required feilds.
 
 ![Add Location](gifs/addLocation.gif)
 
 #### Create Activity
-Demonstrated below is how to add a new activity, linking it with a location.
+Demonstrated below is how to add a new activity, linking it with a location. All form feilds are required.
 
 ![Create Activity](gifs/addActivity.gif)
 
 #### Create Group
-Demonstrated below is the creating of a new group, linking the new group with an activity and at least one user. 
+Demonstrated below is the creating of a new group, linking the new group with an activity and at least one user. All form feilds are required.
 
 ![Create Group](gifs/addGroup.gif)
 
