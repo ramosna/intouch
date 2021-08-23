@@ -14,6 +14,6 @@ For the backend code and database queries see the [app.js](app.js) file
 
 For the html/handlebars files see the [views](views) folder
 
-![Add Group](gifs/Group.gif)
+![Add Group](gifs/addGroup.gif)
 
 ![Add Activity](gifs/addActivity.gif)
