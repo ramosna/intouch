@@ -1,6 +1,6 @@
 # intouch
 
-This project is a full stack CRUD web app that uses Node.js and Express.js as backend with MySQL as the database. The front end is generated using handlebars templating and styled with Bootstrap. The webapp was designed by github user @IanFonzie and myself (@ramosna).
+This project is a full stack CRUD web app that uses Node.js and Express.js as backend with MySQL as the database. The front end is generated using handlebars templating and styled with Bootstrap. The webapp was designed by github user IanFonzie and myself (ramosna).
 
 The goal of InTouch is to create an app that  will help address the problem of group members on an outing getting separated from the group or the entire group getting lost in a location while performing an activity. The goal of the application is to ease some of the uncertainty that comes with doing remote or solo activities. 
 
@@ -14,6 +14,6 @@ For the backend code and database queries see the [app.js](app.js) file
 
 For the html/handlebars files see the [views](views) folder
 
+![Add Group](gifs/Group.gif)
 
-
-![Add Activity](gifs/addActivity.gif "Logo Title Text 1")
+![Add Activity](gifs/addActivity.gif)
