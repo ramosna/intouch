@@ -55,6 +55,8 @@ The gif below demonstrates how to view user information. The first table display
 ![navigation](gifs/navUsers.gif)
 
 #### Navigating Groups
+The gif below demonstrates how to view any groups information. The table to start displays all groups and some of their important information. The second page is an individual groups information page. From here a user can add more members, remove a member and change activities. The third page is the edit group details page which allows one to edit logistical details and description inforamtion. The view activites button takes the user to the associated activies information page. 
+
 ![navigation](gifs/navGroups.gif)
 
 #### Navigating Activities
