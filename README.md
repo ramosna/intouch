@@ -34,6 +34,19 @@ For the html/handlebars files see the [views](views) folder
 
 ### Navigation
 
+#### Using NavBar
 ![navigation](gifs/navigation.gif)
+
+#### Navigating Users
+![navigation](gifs/navUsers.gif)
+
+#### Navigating Groups
+![navigation](gifs/navGroups.gif)
+
+#### Navigating Activities
+![navigation](gifs/navActivities.gif)
+
+#### Navigating Locations
+![navigation](gifs/navLocations.gif)
 
 
