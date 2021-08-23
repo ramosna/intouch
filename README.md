@@ -45,9 +45,13 @@ Demonstrated below is the creating of a new group, linking the new group with an
 ### Navigation
 
 #### Using NavBar
+This gif demostrates how to use the navbar to get around the app pages.
+
 ![navigation](gifs/navigation.gif)
 
 #### Navigating Users
+The gif below demonstrates how to view user information. The first table displays the list of users with the option to view their associated groups. The second table is a list of all the groups that the particular user is a part of. The last page displays all the information of a particular group, including its members and linked activity. 
+
 ![navigation](gifs/navUsers.gif)
 
 #### Navigating Groups
