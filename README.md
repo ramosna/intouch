@@ -12,24 +12,30 @@ At the moment the application is admin-facing as we wanted to build the database
 
 For a list of depandecies see the [package.json](package.json) file.
 
-For the backend code and database queries see the [app.js](app.js) file
+For the backend code and database queries see the [app.js](app.js) file.
 
-For the html/handlebars files see the [views](views) folder
+For the html/handlebars files see the [views](views) folder.
 
 ## Pages
 
 ### Creating Group
 
+The following 4 gifs demonstrate how to add each entity and create a group of users who are to participate in an activity. 
+
 #### Add User
+Demonstrated below is how to add a new user.
 ![Add User](gifs/addUser.gif)
 
 #### Add Location
+Demonstrated below is how to add a new location.
 ![Add Location](gifs/addLocation.gif)
 
 #### Create Activity
+Demonstrated below is how to add a new activity, linking it with a location.
 ![Create Activity](gifs/addActivity.gif)
 
 #### Create Group
+Demonstrated below is the creating of a new group, linking the new group with an activity and at least one user. 
 ![Create Group](gifs/addGroup.gif)
 
 ### Navigation
