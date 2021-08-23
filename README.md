@@ -24,18 +24,22 @@ The following 4 gifs demonstrate how to add each entity and create a group of us
 
 #### Add User
 Demonstrated below is how to add a new user.
+
 ![Add User](gifs/addUser.gif)
 
 #### Add Location
 Demonstrated below is how to add a new location.
+
 ![Add Location](gifs/addLocation.gif)
 
 #### Create Activity
 Demonstrated below is how to add a new activity, linking it with a location.
+
 ![Create Activity](gifs/addActivity.gif)
 
 #### Create Group
 Demonstrated below is the creating of a new group, linking the new group with an activity and at least one user. 
+
 ![Create Group](gifs/addGroup.gif)
 
 ### Navigation
