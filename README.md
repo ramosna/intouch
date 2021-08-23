@@ -60,6 +60,8 @@ The gif below demonstrates how to view any groups information. The table to star
 ![navigation](gifs/navGroups.gif)
 
 #### Navigating Activities
+This gif shows how to navigate the pages related to an activity. The first page is the activities home page which displays a table with each activity and its more important information details. The second page is the individual activities information page, which displays contact information and all details. Next is the edit page which allows a user to add contacts to the activity and delete them. A user can also edit the activity information details as well. 
+
 ![navigation](gifs/navActivities.gif)
 
 #### Navigating Locations
