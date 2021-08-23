@@ -1,4 +1,6 @@
-# intouch
+# InTouch
+
+## Description
 
 This project is a full stack CRUD web app that uses Node.js and Express.js as backend with MySQL as the database. The front end is generated using handlebars templating and styled with Bootstrap. The webapp was designed by github user IanFonzie and myself (ramosna).
 
@@ -14,12 +16,24 @@ For the backend code and database queries see the [app.js](app.js) file
 
 For the html/handlebars files see the [views](views) folder
 
+## Pages
+
+### Creating Group
+
+#### Add User
 ![Add User](gifs/addUser.gif)
 
+#### Add Location
 ![Add Location](gifs/addLocation.gif)
 
+#### Create Activity
 ![Create Activity](gifs/addActivity.gif)
 
+#### Create Group
 ![Create Group](gifs/addGroup.gif)
+
+### Navigation
+
+![navigation](gifs/navigation.gif)
 
 
